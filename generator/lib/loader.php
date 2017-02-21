@@ -54,4 +54,12 @@ class Lib {
     public function render($template, $args = array()) {
         $this->twig->loadTemplate($template)->display($args);
     }
+
+    /**
+     *
+     * @return Twig_Environment
+     */
+    public function getTwig() {
+        return $this->twig;
+    }
 }
